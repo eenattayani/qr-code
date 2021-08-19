@@ -1,6 +1,6 @@
-const qrcodeMin = require("./qrcode.min");
+genQR();
 
-function genQR(str) {
+function genQR() {
   var str = document.querySelector("input").value;
   QRCode.toCanvas(document.getElementById("canvas"), str, function (error) {
     if (error) console.error(error);
